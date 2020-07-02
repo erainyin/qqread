@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+audio {
+    display: none;
+}
+
+#slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* transform: rotate(90deg); */
+}
+
+#radio_control {
+    position: fixed;
+    width: 100%;
+    bottom:0;
+
+}
+
+#radio_control a {
+    display: inline-block;
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+    background: #3eaf7c;
+    color:#fff;
+}
+
+#slider img {
+    width: 100%;
+    height: 100%;
+}
+
+#slider>.slide:not(:first-child) {
+    display: none;
+}
