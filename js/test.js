@@ -1,6 +1,7 @@
         // play_p0
 
         function playp0() {
+
             var radio_p0 = document.getElementById('mp3_p0');
             radio_p0.play();
             $("#btnplayp0").hide();
@@ -328,7 +329,6 @@
         $("#btnpausep6, #btnrepeatp6").hide();
         $("#btnpausep7, #btnrepeatp7").hide();
         $("#btnpausep8, #btnrepeatp8").hide();
-
         function reset_position() {
             var hbody = $(window).height(); //整体文档内容高度
             var wbody = $(window).width(); //整体文档内容高度
@@ -352,5 +352,70 @@
 
         $(document).ready(function () {
             reset_position();
+
+            //隐藏slide
+            $("#btnpausep1, #btnrepeatp1").hide();
+            $("#btnpausep2, #btnrepeatp2").hide();
+            $("#btnpausep3, #btnrepeatp3").hide();
+            $("#btnpausep4, #btnrepeatp4").hide();
+            $("#btnpausep5, #btnrepeatp5").hide();
+            $("#btnpausep6, #btnrepeatp6").hide();
+            $("#btnpausep7, #btnrepeatp7").hide();
+            $("#btnpausep8, #btnrepeatp8").hide();
+
+
+            var bar_percentage = document.getElementById("bar_percentage");
+            var percentage_number = document.getElementById("percentage_number");
+            var gallery_images = document.getElementById("gallery_images");
+
+
+            var queue = new createjs.LoadQueue();
+            createjs.Sound.on("fileload", handleFileLoad);
+            createjs.Sound.alternateExtensions = ["mp3"];
+            createjs.Sound.registerSounds(
+                [{id:"music1", src:"music.mp3"},
+                {id:"music2", src:"music2.mp3"}]
+            , "assets/");
+            queue.loadFile(
+
+
+                {id:"img_p0", src:"data/20200701/img/0.jpg"},
+                {id:"img_p1", src:"data/20200701/img/1.jpg"},
+                {id:"img_p2", src:"data/20200701/img/2.jpg"},
+                {id:"img_p3", src:"data/20200701/img/3.jpg"},
+                {id:"img_p4", src:"data/20200701/img/4.jpg"},
+                {id:"img_p5", src:"data/20200701/img/5.jpg"},
+                {id:"img_p6", src:"data/20200701/img/6.jpg"},
+                {id:"img_p7", src:"data/20200701/img/7.jpg"},
+                {id:"img_p8", src:"data/20200701/img/8.jpg"}
+
+
+                
+                );
+
+            queue.addEventListener("progress", event => {
+                var progress_percentage = Math.floor(event.progress*100);
+                bar_percentage.style.width = progress_percentage+"%";
+                percentage_number.innerHTML = progress_percentage+"%";
+                console.log("progress "+Math.floor(event.progress*100));
+            });
+            queue.addEventListener("complete", event => {
+                console.log("complete "+event.progress);
+            });
+            queue.addEventListener("fileload", handleFileComplete);
+
+
+            function handleFileComplete(event){
+               var item = event.item;
+               var type = item.type;
+
+                if(type == createjs.Types.IMAGE){
+                    gallery_images.appendChild(event.result);
+                }
+
+            }
+
+
+
 
         });
