@@ -14,31 +14,51 @@ body {
 main {
     margin-top: 100px;
 }
-.info{
-    color:gray;
+
+.navbar .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    margin-right: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
 }
+
+.info {
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+}
+
 .booklist .content {
     background: #fff;
     padding: 20px 20px 10px 20px;
     margin-bottom: 30px;
 }
 
-.booklist .content .date{
-    margin:10px 0 0 0 ;
+.booklist .content .date {
+    margin: 10px 0 0 0;
     font-size: 14px;
     font-weight: 500;
-    color:#999;
+    color: #999;
 }
-.booklist .content h2{
+
+.booklist .content h2 {
     font-size: 22px;
     font-weight: 600;
     letter-spacing: -1px;
-    color:#333;
+    color: #333;
 }
-.booklist .content .bookurl_test{
+
+.booklist .content .bookurl_test {
     width: 100%;
 }
+
 .cover_thumb {
     height: 180px;
     padding: 0;
+}
+
+footer p {
+    color: #ccc;
+    text-align: center;
+    font-size: 12px;
 }
