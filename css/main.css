@@ -1,0 +1,18 @@
+body {
+    background: #343a40;
+}
+
+main {
+    margin-top: 120px;
+}
+
+.booklist .content {
+    background: #fff;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 30px;
+}
+
+.cover_thumb {
+    height: 180px;
+    padding: 0;
+}

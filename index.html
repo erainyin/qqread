@@ -1,125 +1,362 @@
-<!DOCTYPE HTML>
-<html lang="zh-cn">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta content="青青读绘本" name="description" />
-    <meta content="青青" name="author" />
-    <meta charset="UTF-8">
-    <title>青青读绘本-20200701</title>
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="青青读绘本 Qingqing Reading">
+    <meta name="author" content="Erain, Qingqing, Kandesn">
+    <title>青青读绘本</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">青青读绘本</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="http://yinyu.name">yinyu.name</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
-    <div id="slider">
-        <div class="slide" id="sp0">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp0" onclick="playp0()">播放0</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep0" onclick="pausep0()">暂停0</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp0" onclick="repeatp0()">重新播放0</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/cover_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/cover.mp3" controls="controls" id="mp3_p0">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="slide" id="sp1">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp1" onclick="playp1()">播放1</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep1" onclick="pausep1()">暂停1</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp1" onclick="repeatp1()">重新播放1</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/1_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/1.mp3" controls="controls" id="mp3_p1">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="slide" id="sp2">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp2" onclick="playp2()">播放2</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep2" onclick="pausep2()">暂停2</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp2" onclick="repeatp2()">重新播放2</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/2_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/2.mp3" controls="controls" id="mp3_p2">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="slide" id="sp3">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp3" onclick="playp3()">播放4</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep3" onclick="pausep3()">暂停4</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp3" onclick="repeatp3()">重新播放4</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/3_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/3.mp3" controls="controls" id="mp3_p3">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="slide" id="sp4">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp4" onclick="playp4()">播放4</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep4" onclick="pausep4()">暂停4</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp4" onclick="repeatp4()">重新播放4</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/4_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/4.mp3" controls="controls" id="mp3_p4">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="slide" id="sp5">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp5" onclick="playp5()">播放5</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep5" onclick="pausep5()">暂停5</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp5" onclick="repeatp5()">重新播放5</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/5_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/5.mp3" controls="controls" id="mp3_p5">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="slide" id="sp6">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp6" onclick="playp6()">播放6</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep6" onclick="pausep6()">暂停6</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp6" onclick="repeatp6()">重新播放6</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/6_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/6.mp3" controls="controls" id="mp3_p6">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="slide" id="sp7">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp7" onclick="playp7()">播放7</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep7" onclick="pausep7()">暂停7</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp7" onclick="repeatp7()">重新播放7</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/7_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/7.mp3" controls="controls" id="mp3_p7">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="slide" id="sp8">
-            <div id="radio_control">
-                <a href="javascript:void(0)" class="btn" id="btnplayp8" onclick="playp8()">播放8</a>
-                <a href="javascript:void(0)" class="btn" id="btnpausep8" onclick="pausep8()">暂停8</a>
-                <a href="javascript:void(0)" class="btn" id="btnrepeatp8" onclick="repeatp8()">重新播放8</a>
-            </div>
-            <img class="slideImg" src="data/20200701/img/8_l.jpg">
-            <audio preload="auto"  src="data/20200701/radio/8.mp3" controls="controls" id="mp3_p8">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </div>
+    <main role="main">
 
 
 
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_allabouthoneybees.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-07-09</p>
+                        <h2 class="booktitle">All About Honeybees</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/aArKjNhi">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_awalkatnight.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-07-07</p>
+                        <h2 class="booktitle">A Walk at Night</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/y5oRJtdV">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_themissingcat.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-06-29</p>
+                        <h2 class="booktitle">The Missing Cat</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/y5oRJtdV">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_bestnewfriends.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-06-24</p>
+                        <h2 class="booktitle">Best New Friends</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/oL7Lieiz">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_stonesoup.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-06-19</p>
+                        <h2 class="booktitle">Stone Soup</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/eyoNuZeF">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_funforhugs.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-06-08</p>
+                        <h2 class="booktitle">Fun for Hugs</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/oL7Lieiz">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_thegeckothatcametoschool.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-06-03</p>
+                        <h2 class="booktitle">The Gecko That Came To School</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/dc1KmQQV">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_allaboutanimalbabies.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-05-28</p>
+                        <h2 class="booktitle">All About Animal Babies</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/Q4q5LoCM">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_inwinter.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-05-22</p>
+                        <h2 class="booktitle">In Winter</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/myjJ9Jst">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_justwaitandsee.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-05-22</p>
+                        <h2 class="booktitle">Just Wait and See</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/uxJ8A1xK">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_dinnerformaisy.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-05-19</p>
+                        <h2 class="booktitle">Dinner for Maisy</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/5aJGrBQq">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_theskunkwithnostripes.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-05-13</p>
+                        <h2 class="booktitle">The Skunk with No Stripes</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/NT4mnXdP">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_thegoatinthegarden.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-05-02</p>
+                        <h2 class="booktitle">The Goat in the Garden</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/A5nYfpwc">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_babybird.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-05-02</p>
+                        <h2 class="booktitle">Baby Bird</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/jXTyEeU5">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_thestorm.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-27</p>
+                        <h2 class="booktitle">The Storm</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/6jMwLznV">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_papasbirthday.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-27</p>
+                        <h2 class="booktitle">Papa's Birthday</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/6jMwLznV">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_helpingmom.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-23</p>
+                        <h2 class="booktitle">Helping Mom</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/9tpC7Vme">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_goddieandthethreebears.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-20</p>
+                        <h2 class="booktitle">Goldie And The Three Bears</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/a8ycHEcm">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_famerdansducks.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-15</p>
+                        <h2 class="booktitle">Farmer Dan's Duck</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/we8pJcVR">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_thebigstorm.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-02</p>
+                        <h2 class="booktitle">The Big Storm</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/dP2NtkNG">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_picturesofhugs.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-13</p>
+                        <h2 class="booktitle">Pictures of Hugs</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/pfqkUnCn">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_thepool.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-09</p>
+                        <h2 class="booktitle">The Pool</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/v2WWq9Xq">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_bunnyandthemonster.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-07</p>
+                        <h2 class="booktitle">Bunny And the Monster</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/fjSNwYCu">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_thesoccergame.jpg" class="col-12 cover_thumb" />
+
+                        <p class="date">2020-04-02</p>
+                        <h2 class="booktitle">The Soccer Game</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/jiJrGgDF">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_abox.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-02</p>
+                        <h2 class="booktitle">A Box</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/V3ktKBmU">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_awalkwithmeli.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-04-01</p>
+                        <h2 class="booktitle">A Walk with Meli</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/1WnHP7zX">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4  booklist">
+                    <div class="content">
+                        <img src="img/cover_babypictures.jpg" class="col-12 cover_thumb" />
+                        <p class="date">2020-03-20</p>
+                        <h2 class="booktitle">Baby Pictures</h2>
+                        <p><a class="btn btn-secondary" target="_blank"
+                                href="https://file063891dfcb1a.vrh5.cn/v3/idea/PyN72kFB">预览(不花钱)</a></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <hr>
+
+        </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+        <p>&copy; Company 2017-2020</p>
+    </footer>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <!-- <script src="js/preloadjs.min.js"></script> -->
-    <script src="js/global.js"></script>
-    <!-- <script src="js/test.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

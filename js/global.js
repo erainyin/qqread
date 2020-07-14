@@ -297,7 +297,7 @@
                 $("#btnpausep8").hide();
                 $("#btnrepeatp8").show();
                 $('#sp8').hide();
-                $('#sp8').show();
+                $('#sp0').show();
             }, false);
         }
 
@@ -336,7 +336,7 @@
             console.log(wbody, hbody);
             //调整图片高度宽度
             $('.slideImg').css({
-                "height": hbody-90,
+                "height": hbody,
                 "width": wbody
             });
             $('.btn').css({
