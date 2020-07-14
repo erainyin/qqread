@@ -47,11 +47,16 @@ main {
     letter-spacing: -1px;
     color: #333;
 }
-
-.booklist .content .bookurl_test {
-    width: 100%;
+.booklist .content p.btns{
+    margin-bottom:5px;
 }
-
+.booklist .content .bookurl_test, .booklist .content .bookurl_real{
+    width: 100%;
+    margin-bottom:5px;
+}
+.booklist .content .card-body{
+    padding:5px;
+}
 .cover_thumb {
     height: 180px;
     padding: 0;
