@@ -1,17 +1,43 @@
+@charset "utf-8";
+
+/* 初始化 */
+@import url("normalize.css");
+@import url("webfont.css");
+@import url('https://fonts.font.im/css?family=Montserrat:300,400,500,600');
+
 body {
     background: #343a40;
+    font-family: 'Montserrat';
+
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 100px;
 }
-
+.info{
+    color:gray;
+}
 .booklist .content {
     background: #fff;
     padding: 20px 20px 10px 20px;
     margin-bottom: 30px;
 }
 
+.booklist .content .date{
+    margin:10px 0 0 0 ;
+    font-size: 14px;
+    font-weight: 500;
+    color:#999;
+}
+.booklist .content h2{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color:#333;
+}
+.booklist .content .bookurl_test{
+    width: 100%;
+}
 .cover_thumb {
     height: 180px;
     padding: 0;
