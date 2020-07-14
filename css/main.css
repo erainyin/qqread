@@ -62,3 +62,16 @@ footer p {
     text-align: center;
     font-size: 12px;
 }
+
+.fancybox-slide--iframe .fancybox-content{
+    max-width: 375px;
+    max-height: 666px;
+}
+@media (min-width: 768px) {
+    .fancybox-slide--iframe .fancybox-content{
+        max-width: 375px;
+        max-height: 666px;
+        transform: rotate(-90deg);
+    }
+    
+}
