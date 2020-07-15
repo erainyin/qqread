@@ -27,24 +27,32 @@ main {
     color: rgba(255,255,255,.5);
     font-size: 14px;
 }
-
 .booklist .content {
     background: #fff;
     padding: 20px 20px 10px 20px;
     margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .booklist .content .date {
-    margin: 10px 0 0 0;
     font-size: 14px;
     font-weight: 600;
-    color: #999;
+    color: #6c757d;
+    position: absolute;
+    top:10px;
+    left:10px;
+    background:#fff;
+    padding:5px 15px 10px 10px;
+    border-radius: 0 0 10px 0;
 }
 
-.booklist .content h2 {
+.booklist .content .booktitle {
     font-size: 18px;
     font-weight: 700;
     color: #333;
+    margin-top: 10px;
+    text-align: center;
 }
 .booklist .content p.btns{
     margin-bottom:5px;
@@ -63,6 +71,8 @@ main {
 .cover_thumb {
     height: 220px;
     padding: 0;
+    border-radius: 5px;
+
 }
 
 footer p {
