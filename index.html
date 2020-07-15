@@ -9,10 +9,14 @@
     <title>青青读绘本</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/brands.min.css" rel="stylesheet">
+    <link href="css/regular.min.css" rel="stylesheet">
+    <link href="css/solid.min.css" rel="stylesheet">
     <!-- Favicons -->
     <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
 
@@ -58,7 +62,11 @@
                 </li> -->
             </ul>
             <div class="info">
-                这些都是预览的打开FREE，但不能微信分享。
+                <i class="far fa-lightbulb"></i> <!-- uses regular style -->
+                这些都是预览的打开FREE，但不能微信分享。<a class="btn btn-danger btn-sm bookurl_real" data-toggle="collapse"
+                    href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fas fa-wallet"></i> 花钱看
+                </a>
             </div>
             <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -83,17 +91,42 @@
                         <!-- <img src="img/cover_tootal.jpg" class="col-12 cover_thumb" /> -->
                         <p class="date">2020-07-15</p>
                         <h2 class="booktitle">Too Tall</h2>
-                        <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe" href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/NfGEpzSq">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
-                            </a>
+                        <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/NfGEpzSq">查看</a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/uKPRdbU6" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/uKPRdbU6"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
                             </div>
                         </p>
 
@@ -107,17 +140,44 @@
                         <!-- <img src="img/cover_allabouthoneybees.jpg" class="col-12 cover_thumb" /> -->
                         <p class="date">2020-07-09</p>
                         <h2 class="booktitle">All About Honeybees</h2>
-                        <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe" href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/aArKjNhi">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                        <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/aArKjNhi">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/7qHULFoj" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/7qHULFoj"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
 
@@ -132,17 +192,42 @@
                         <p class="date">2020-07-07</p>
                         <h2 class="booktitle">A Walk at Night</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/JYCLDikX">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/JYCLDikX">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/x41keumB" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/x41keumB"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
                             </div>
                         </p>
                     </div>
@@ -156,17 +241,43 @@
                         <p class="date">2020-06-29</p>
                         <h2 class="booktitle">The Missing Cat</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/y5oRJtdV">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/y5oRJtdV">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/92vjHHuu" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/92vjHHuu"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -180,17 +291,43 @@
                         <p class="date">2020-06-24</p>
                         <h2 class="booktitle">Best New Friends</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/KH8bEhZj">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/KH8bEhZj">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/B4GYbQwB" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/B4GYbQwB"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -204,17 +341,43 @@
                         <p class="date">2020-06-19</p>
                         <h2 class="booktitle">Stone Soup</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/eyoNuZeF">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/eyoNuZeF">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/7qmYrcY8" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/7qmYrcY8"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -228,17 +391,43 @@
                         <p class="date">2020-06-08</p>
                         <h2 class="booktitle">Fun for Hugs</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/oL7Lieiz">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/oL7Lieiz">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/GcGbgSCz" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/GcGbgSCz"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -252,17 +441,43 @@
                         <p class="date">2020-06-03</p>
                         <h2 class="booktitle">The Gecko That Came To School</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/dc1KmQQV">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/dc1KmQQV">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/SU3LyUAm" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/SU3LyUAm"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -276,17 +491,43 @@
                         <p class="date">2020-05-28</p>
                         <h2 class="booktitle">All About Animal Babies</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/Q4q5LoCM">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/Q4q5LoCM">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/wMNuvE7w" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/wMNuvE7w"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -300,17 +541,43 @@
                         <p class="date">2020-05-22</p>
                         <h2 class="booktitle">In Winter</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/myjJ9Jst">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/myjJ9Jst">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/22hb1HFh" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/22hb1HFh"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -324,17 +591,43 @@
                         <p class="date">2020-05-22</p>
                         <h2 class="booktitle">Just Wait and See</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/uxJ8A1xK">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/uxJ8A1xK">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/VsmQtHrv" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/VsmQtHrv"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -349,17 +642,43 @@
                         <p class="date">2020-05-19</p>
                         <h2 class="booktitle">Dinner for Maisy</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/5aJGrBQq">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/5aJGrBQq">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/9TqdhYJz" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/9TqdhYJz"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -373,17 +692,43 @@
                         <p class="date">2020-05-13</p>
                         <h2 class="booktitle">The Skunk with No Stripes</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/NT4mnXdP">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/NT4mnXdP">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/V7AZsbVM" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/V7AZsbVM"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -397,17 +742,43 @@
                         <p class="date">2020-05-02</p>
                         <h2 class="booktitle">The Goat in the Garden</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/A5nYfpwc">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/A5nYfpwc">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/camEXFtQ" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/camEXFtQ"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -421,17 +792,43 @@
                         <p class="date">2020-05-02</p>
                         <h2 class="booktitle">Baby Bird</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/jXTyEeU5">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/jXTyEeU5">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/Prd7MGk3" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/Prd7MGk3"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -445,17 +842,43 @@
                         <p class="date">2020-04-27</p>
                         <h2 class="booktitle">The Storm</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/zLJ41w4f">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/zLJ41w4f">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/zKm1D8Jb" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/zKm1D8Jb"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -469,17 +892,43 @@
                         <p class="date">2020-04-27</p>
                         <h2 class="booktitle">Papa's Birthday</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/6jMwLznV">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/6jMwLznV">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/QRqA7Z8U" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/QRqA7Z8U"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -493,17 +942,43 @@
                         <p class="date">2020-04-23</p>
                         <h2 class="booktitle">Helping Mom</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/9tpC7Vme">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/9tpC7Vme">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/2S5Kf3sD" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/2S5Kf3sD"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -517,17 +992,43 @@
                         <p class="date">2020-04-20</p>
                         <h2 class="booktitle">Goldie And The Three Bears</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/a8ycHEcm">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/a8ycHEcm">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/J6HcQfsy" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/J6HcQfsy"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -542,17 +1043,43 @@
                         <p class="date">2020-04-15</p>
                         <h2 class="booktitle">Farmer Dan's Duck</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/we8pJcVR">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/we8pJcVR">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/8cWgpLju" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/8cWgpLju"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -567,17 +1094,43 @@
                         <p class="date">2020-04-02</p>
                         <h2 class="booktitle">The Big Storm</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/dP2NtkNG">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/dP2NtkNG">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/42xGhdxC" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/42xGhdxC"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -591,17 +1144,43 @@
                         <p class="date">2020-04-13</p>
                         <h2 class="booktitle">Pictures of Hugs</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/pfqkUnCn">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/pfqkUnCn">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/EkgXkHVG" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/EkgXkHVG"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -615,17 +1194,43 @@
                         <p class="date">2020-04-09</p>
                         <h2 class="booktitle">The Pool</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/v2WWq9Xq">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/v2WWq9Xq">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/vb1uus3Y" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/vb1uus3Y"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -639,17 +1244,43 @@
                         <p class="date">2020-04-07</p>
                         <h2 class="booktitle">Bunny And the Monster</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/fjSNwYCu">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/fjSNwYCu">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/wTXH3Dy7" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/wTXH3Dy7"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -663,17 +1294,43 @@
                         <p class="date">2020-04-02</p>
                         <h2 class="booktitle">The Soccer Game</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/jiJrGgDF">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/jiJrGgDF">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/CJFNJ65a" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/CJFNJ65a"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -687,17 +1344,43 @@
                         <p class="date">2020-04-02</p>
                         <h2 class="booktitle">A Box</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/V3ktKBmU">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/V3ktKBmU">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/zkrAaqH3" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/zkrAaqH3"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -711,17 +1394,43 @@
                         <p class="date">2020-04-01</p>
                         <h2 class="booktitle">A Walk with Meli</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/1WnHP7zX">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/1WnHP7zX">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/6zVW7wke" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/6zVW7wke"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>
@@ -735,17 +1444,43 @@
                         <p class="date">2020-03-20</p>
                         <h2 class="booktitle">Baby Pictures</h2>
                         <p class="btns"><a class="btn btn-secondary bookurl_test" data-fancybox data-type="iframe"
-                                href="javascript:;"
-                                data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/PyN72kFB">预览 <span class="badge badge-pill badge-success">FREE</span></a>
-                            <a class="btn btn-light btn-sm bookurl_real" data-toggle="collapse"
-                                href="#collapseExample" role="button" aria-expanded="false"
-                                aria-controls="collapseExample">
-                                花钱也要看
+                                href="javascript:;" data-src="https://file063891dfcb1a.vrh5.cn/v3/idea/PyN72kFB">查看
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                    <a href="https://file063891dfcb1a.vrh5.cn/v3/idea/6fdqUTVJ" class="btn btn-sm btn-link" target="_blank">点这里在新窗口打开(￥0.04元/次)</a>
+                                <!--  -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-link" data-toggle="modal"
+                                    data-target="#exampleModal">点这里在新窗口打开(￥0.04元/次)</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">查看已发布的版本</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="alert alert-danger" role="alert">一次0.04元！最后一次提醒了啊！确定继续么？
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                
+                                                <a class="btn btn-light btn-sm"
+                                                    href="https://file063891dfcb1a.vrh5.cn/v3/idea/6fdqUTVJ"
+                                                    target="_blank" role="button">我有钱，你管我呢！</a>
+                                                    <button type="button" class="btn btn-primary"
+                                                    data-dismiss="modal">摸摸钱包，还是算了</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!--  -->
+
                             </div>
                         </p>
                     </div>

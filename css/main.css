@@ -42,7 +42,7 @@ main {
 }
 
 .booklist .content h2 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: -1px;
     color: #333;
@@ -57,8 +57,11 @@ main {
 .booklist .content .card-body{
     padding:5px;
 }
+.btn-link{
+    width: 100%;
+}
 .cover_thumb {
-    height: 180px;
+    height: 220px;
     padding: 0;
 }
 
