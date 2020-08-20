@@ -85,6 +85,9 @@ footer p {
     max-width: 375px;
     max-height: 666px;
 }
+.needpay{
+    display: none;
+}
 @media (min-width: 768px) {
     .fancybox-slide--iframe .fancybox-content{
         max-width: 375px;
