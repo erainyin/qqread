@@ -14,14 +14,22 @@ xmlhttp.open("GET","rc.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
-document.write("<table border='1'>");
+document.write("<ul >");
 var x=xmlDoc.getElementsByTagName("RC");
 for (i=0;i<x.length;i++)
 {
 document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+document.write("<br>");
 document.write(x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue);
+document.write("<br>");
+document.write(x[i].getElementsByTagName("COVER")[0].childNodes[0].nodeValue);
+document.write("<br>");
+document.write(x[i].getElementsByTagName("LINKPUB")[0].childNodes[0].nodeValue);
+document.write("<br>");
+document.write(x[i].getElementsByTagName("LINKPRE")[0].childNodes[0].nodeValue);
+document.write("<br>");
 }
-document.write("</table>");
+document.write("</ul>");
 </script>
 
 </body>
