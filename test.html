@@ -15,14 +15,11 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
 document.write("<table border='1'>");
-var x=xmlDoc.getElementsByTagName("CD");
+var x=xmlDoc.getElementsByTagName("RC");
 for (i=0;i<x.length;i++)
 {
-document.write("<tr><td>");
-document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
-document.write("</td><td>");
 document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
-document.write("</td></tr>");
+document.write(x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue);
 }
 document.write("</table>");
 </script>
