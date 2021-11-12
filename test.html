@@ -14,22 +14,23 @@ xmlhttp.open("GET","rc.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
-document.write("<ul >");
 var x=xmlDoc.getElementsByTagName("RC");
 for (i=0;i<x.length;i++)
 {
-document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
-document.write("<br>");
+    document.write("<li><img src='");
+        document.write(x[i].getElementsByTagName("COVER")[0].childNodes[0].nodeValue);
+        document.write("' class='col-12 cover_thumb lazyload' alt='coverimg'><p class='date'>");
 document.write(x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue);
-document.write("<br>");
-document.write(x[i].getElementsByTagName("COVER")[0].childNodes[0].nodeValue);
-document.write("<br><a href='");
-document.write(x[i].getElementsByTagName("LINKPUB")[0].childNodes[0].nodeValue);
-document.write("'>linkpub</a><br><a href='");
+document.write("</p><h2 class='booktitle'>");
+    document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+
+document.write("</h2><p class='btns'><a class='btn btn-secondary bookurl_test' data-fancybox data-type='iframe' href='javascript:;' data-src='");
 document.write(x[i].getElementsByTagName("LINKPRE")[0].childNodes[0].nodeValue);
-document.write("'>linkpre</a><br>");
+document.write("'>查看</a><!-- 正式链接");
+document.write(x[i].getElementsByTagName("LINKPUB")[0].childNodes[0].nodeValue);
+document.write("-->");
 }
-document.write("</ul>");
+
 </script>
 
 </body>
