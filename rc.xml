@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!-- Edited by erain -->
 <CATALOG>
+
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220803/b880d7dd.jpg</COVER>
+		<DATE>2022-08-03</DATE>
+		<TITLE>Eugenie Clark, Shark Lady</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/z7EUjctZ</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/rTFpGLi3</LINKPUB>
+	</RC>
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220709/200d92a7.jpg</COVER>
+		<DATE>2022-07-09</DATE>
+		<TITLE>All About Astronauts</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/YEjFk1sr</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/FQLGwwSb</LINKPUB>
+	</RC>
+
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220614/d4898fc3.jpg</COVER>
+		<DATE>2022-06-14</DATE>
+		<TITLE>The Hot Day</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/1vRfDeJG</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/T25x3Dvn</LINKPUB>
+	</RC>
+
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220529/e836bb36.jpg</COVER>
+		<DATE>2022-05-29</DATE>
+		<TITLE>A Dragon's Lullaby</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/GT786fp3</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/P9RWkKtz</LINKPUB>
+	</RC>
+
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220508/45ad3849.jpg</COVER>
+		<DATE>2022-05-08</DATE>
+		<TITLE>The Fox and the Gulls</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/KEzX2DFK</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/jkMTXU3J</LINKPUB>
+	</RC>
+
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220508/e48a2b27.jpg</COVER>
+		<DATE>2022-05-15</DATE>
+		<TITLE>Puddle Play</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/WxvaQV42</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/XjyGg8zF</LINKPUB>
+	</RC>
+
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220409/586d7c4d.jpg</COVER>
+		<DATE>2022-04-09</DATE>
+		<TITLE>The Flytrap Who Wouldn't Eat Flies</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/WggwkD8E</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/VcMiS2LU</LINKPUB>
+	</RC>
+
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220319/7ad604e2.jpg</COVER>
+		<DATE>2022-03-19</DATE>
+		<TITLE>March to the Park</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/t2kZzdYk</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/ENnjabMU</LINKPUB>
+	</RC>
+	
+	<RC>
+		<COVER>https://file.ih5.cn/v3/files/1848808/20220312/1a0bce80.jpg</COVER>
+		<DATE>2022-03-12</DATE>
+		<TITLE>The Roadrunners</TITLE>
+		<LINKPRE>https://file063891dfcb1a.vrh5.cn/v3/idea/ASgWfZv6</LINKPRE>
+		<LINKPUB>https://file063891dfcb1a.vrh5.cn/v3/idea/gpnQSAKd</LINKPUB>
+	</RC>
+
 	<RC>
 		<COVER>https://file.ih5.cn/v3/files/1848808/20220226/c10c3434.jpg</COVER>
 		<DATE>2022-02-26</DATE>
